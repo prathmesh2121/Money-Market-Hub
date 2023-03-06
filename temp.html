@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<style>
+    .news-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+}
+
+.news-container .title {
+    position: absolute;
+    background: #df2020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 15s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+}
+
+.news-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+
+    }
+}
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="news-container">
+        <div class="title">
+            Breaking News
+        </div>
+
+        <ul>
+            <li style="font-size: 25px; font-style: italic;" >
+                <img src="images/adani2.png" width="60px" height="30px" style="border: solid 1px black; padding: 5px;">
+                <a href="https://www.livemint.com/market/stock-market-news/adani-group-enterprises-news-live-updates-share-price-hindenburg-row-11675049205070.html">
+                Adani LIVE: Bank of Baroda to continue giving loans to Adani Group, report claims
+                </a>
+            </li>
+            
+            <li style="font-size: 25px; font-style: italic;">
+                <img src="images/itc.png" width="45px" height="30px" style="border: solid 1px black; padding: 5px;">
+                <a href="https://www.livemint.com/market/stock-market-news/nine-of-top-10-firms-add-rs-1-88-lakh-cr-in-m-cap-itc-biggest-winner-11675571883243.html">
+                Nine of top 10 firms add ₹1.88 lakh cr in m-cap; ITC biggest winner
+                </a>
+            <li style="font-size: 25px; font-style: italic;">
+                <img src="images/nasdaq.png" width="65px" height="30px" style="border: solid 1px black; padding: 5px;">
+                <a href="https://www.livemint.com/market/stock-market-news/us-stocks-wall-street-opens-lower-as-big-job-gains-fan-inflation-fears-11675435665847.html">
+                US Stocks: Wall Street opens lower as big job gains fan inflation fears
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

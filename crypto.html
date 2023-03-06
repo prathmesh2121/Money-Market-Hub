@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Crypto
+        </title>
+    </head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="icons8-stock-market-64.png">
+        <body id="cbdy">
+            <!-- TradingView Widget BEGIN -->
+            <label id="cl1" style="display: block; background-color: wheat; color: black; margin: 10px; padding: 7px; font-size: 20px;">Crypto Market Screener</label>
+            <div class="ct1">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                    {
+                    "width": 1000,
+                    "height": 490,
+                    "defaultColumn": "overview",
+                    "screener_type": "crypto_mkt",
+                    "displayCurrency": "USD",
+                    "colorTheme": "light",
+                    "locale": "in",
+                    "isTransparent": false
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+            
+        </body>
+</html>
